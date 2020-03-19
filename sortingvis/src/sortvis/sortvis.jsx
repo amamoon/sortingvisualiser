@@ -22,6 +22,22 @@ export default class SortingVisualiser extends React.Component {
         this.setState({array});
     }
 
+    mergeSort(){
+
+    }
+
+    quickSort(){
+
+    }
+
+    bubbleSort(){
+
+    }
+
+    heapSort(){
+        
+    }
+
     render(){
         const {array} = this.state;
 
@@ -35,6 +51,10 @@ export default class SortingVisualiser extends React.Component {
                     </div>
                 ))}
                 <button onClick={() => this.resetArray()}>New Array</button>
+                <button onClick={() => this.mergeSort()}>Merge Sort</button>
+                <button onClick={() => this.quickSort()}>Quick Sort</button>
+                <button onClick={() => this.bubbleSort()}>Bubble Sort</button>
+                <button onClick={() => this.heapSort()}>Heap Sort</button>
             </div>
         )
     }
